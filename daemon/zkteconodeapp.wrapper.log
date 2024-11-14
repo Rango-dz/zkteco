@@ -1,0 +1,2 @@
+2024-11-14 15:47:39 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\radiology\Desktop\attendance\node_modules\node-windows\lib\wrapper.js --file C:\Users\radiology\Desktop\attendance\app.js --scriptoptions= --log "ZKTecoNodeApp wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-11-14 15:47:39 - Started 1060

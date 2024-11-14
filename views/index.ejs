@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Records</title>
+    <style>
+        /* Add your styles here or link a stylesheet */
+    </style>
+</head>
+<body>
+    <h1>Attendance Records</h1>
+
+    <h2>Filter By:</h2>
+    <ul>
+        <li><a href="/?filter=today">Today</a></li>
+        <li><a href="/?filter=week">This Week</a></li>
+        <li><a href="/?filter=month">This Month</a></li>
+        <li><a href="/?filter=all">All</a></li>
+    </ul>
+
+    <h3>Currently Viewing: <%= filter.charAt(0).toUpperCase() + filter.slice(1) %></h3>
+    <p>Total records retrieved: <%= records.length %></p>
+
+    <% if (records.length > 0) { %>
+        <table border="1">
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Timestamp</th>
+            </tr>
+            <% records.forEach(record => { %>
+                <tr>
+                    <td><%= record.userId %></td>
+                    <td><%= record.name %></td>
+                    <td><%= record.timestamp %></td>
+                </tr>
+            <% }) %>
+        </table>
+    <% } else { %>
+        <p>No attendance records found for the selected period.</p>
+    <% } %>
+
+    <br>
+    <a href="/export?filter=<%= filter %>">Export to Excel</a>
+</body>
+</html>

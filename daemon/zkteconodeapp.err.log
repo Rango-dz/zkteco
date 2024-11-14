@@ -1,0 +1,24 @@
+Error fetching attendance data: ZKError {
+  err: Error: connect ETIMEDOUT 10.0.0.112:4370
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+    errno: -4039,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '10.0.0.112',
+    port: 4370
+  },
+  ip: '10.0.0.112',
+  command: 'TCP CONNECT'
+}
+Error fetching attendance data: ZKError {
+  err: Error: connect ETIMEDOUT 10.0.0.112:4370
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+    errno: -4039,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '10.0.0.112',
+    port: 4370
+  },
+  ip: '10.0.0.112',
+  command: 'TCP CONNECT'
+}
